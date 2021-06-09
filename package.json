@@ -2,9 +2,33 @@
   "name": "@theorylabs/much-ado-about-nothing",
   "version": "1.0.0",
   "description": "A lib literally meant to be absolutely nothing",
-  "main": "src/index.js",
+  "source": "./src/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "repository": "https://Github.com/TheoryLabs/Much-Ado-About-Nothing",
   "author": "Branden Dane <Dane@TheoryLabs.dev> (https://TheoryLabs.dev)",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "keywords": [
+    "theorylabs",
+    "noop",
+    "lib",
+    "package",
+    "danetheory",
+    "much-ado-about-nothing",
+    "placeholder"
+  ],
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "microbundle": "^0.13.2"
+  },
+  "scripts": {
+    "watch": "microbundle watch --global axios=axios",
+    "build": "microbundle build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "node -r esm ./demo.js"
+  }
 }
