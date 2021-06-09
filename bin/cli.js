@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 
-const path = require('path')
-const pathToPkg = path.join(__dirname, '..', 'package.json')
-
-const pkg = require(pathToPkg)
-const pathToLib = path.resolve(pkg.main)
-
-
-const noop = require(pathToLib)
+// const path = require('path')
+// const pathToPkg = path.join(process.cwd(), 'package.json')
+//
+// const pkg = require(pathToPkg)
+// const pathToLib = path.resolve(pkg.main)
+//
+//
+// const noop = require(pathToLib)
+const noop = require('../src')
 
 const CLI = (_stdin = process.argv) => {
   let hasArg = _stdin.slice(2).length > 0
