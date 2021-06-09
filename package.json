@@ -16,6 +16,9 @@
     "placeholder"
   ],
   "main": "./src/index.js",
+  "bin": {
+    "nuthin": "./bin/cli.js"
+  },
   "scripts": {
     "pub": "yarn publish --access public"
   }
